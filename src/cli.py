@@ -9,20 +9,23 @@ def cli():
         \t 5. EXIT
     ''').strip())
 
-
     if task_number == 1:
-        from TASK1.taskone import hangman
-        hangman()
+        from src.TASK1 import taskone
+        taskone()
     elif task_number == 2:
-        from TASK2.tasktwo import task_two
-        task_two()
+        from src.TASK2 import tasktwo
+        tasktwo()
     elif task_number == 3:
-        from TASK3.taskthree import task_three
-        task_three()
+        from src.TASK3 import taskthree
+        taskthree()
     elif task_number == 4:
-        from TASK4.taskfour import task_four
-        task_four()
+        from src.TASK4 import taskfour
+        taskfour()
     elif task_number == 5:
-        print(" THANK YOU FOR USING MY CODE ALPHA PYTHON PROGRAMMING INTERNSHIP PROJECT. GOODBYE! \n")
+        print("Exiting the program. Goodbye!")
+        exit()
     else:
-        print(" INVALID TASK NUMBER. PLEASE ENTER A VALID TASK NUMBER (1-5). \n")
+        print("Invalid task number. Please enter a number between 1 and 5.")
+        cli()
+
+
