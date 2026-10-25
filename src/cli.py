@@ -11,16 +11,16 @@ def cli():
 
 
     if task_number == 1:
-        from src.utils.taskone import hangman
+        from TASK1.taskone import hangman
         hangman()
     elif task_number == 2:
-        from src.utils.tasktwo import task_two
+        from TASK2.tasktwo import task_two
         task_two()
     elif task_number == 3:
-        from src.utils.taskthree import task_three
+        from TASK3.taskthree import task_three
         task_three()
     elif task_number == 4:
-        from src.utils.taskfour import task_four
+        from TASK4.taskfour import task_four
         task_four()
     elif task_number == 5:
         print(" THANK YOU FOR USING MY CODE ALPHA PYTHON PROGRAMMING INTERNSHIP PROJECT. GOODBYE! \n")
