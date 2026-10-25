@@ -40,5 +40,8 @@ def stock_investment():
         if replay == 'y':
             stock_investment()
 
+        else:
+            print("THANK YOU FOR USING THE STOCK INVESTMENT CALCULATOR! GOODBYE!\n")
+
 
         

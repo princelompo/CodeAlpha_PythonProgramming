@@ -20,6 +20,15 @@ def hangman():
             attempts -= 1
             print(f" ❌ SORRY! '{guessed}' IS NOT IN THE WORD. ATTEMPTS LEFT: {attempts}")
 
+        if attempts == 0:
+            print(f" 💀 GAME OVER! THE WORD WAS '{word.upper()}'.\n")
+            answer = input(" DO YOU WANT TO PLAY AGAIN? (Y/N): ").lower().strip()
+            if answer == 'y':
+                hangman()
+            else:
+                print(" THANK YOU FOR PLAYING! GOODBYE! \n")
+                break
+
         if all(letter in all_words for letter in word):
             print(f" 🎉 CONGRATULATIONS! YOU GUESSED THE WORD '{word.upper()}' CORRECTLY!\n")
             answer = input(" DO YOU WANT TO PLAY AGAIN? (Y/N): ").lower().strip()

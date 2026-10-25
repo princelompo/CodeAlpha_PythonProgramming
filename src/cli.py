@@ -1,5 +1,5 @@
 def cli():
-    print(" \t🔶 WELCOME TO MY CODE ALPHA PYTHON PROGRAMMING INTERNSHIP PROJECT 🔶 \n")
+    print(" \n 🔶 WELCOME TO MY CODE ALPHA PYTHON PROGRAMMING INTERNSHIP PROJECT 🔶 \n")
 
     task_number = int(input('''PLEASE ENTER THE TASK NUMBER YOU WANT TO RUN (1-5) :
         \t 1. HANGMAN GAME
@@ -10,11 +10,11 @@ def cli():
     ''').strip())
 
     if task_number == 1:
-        from src.TASK1 import taskone
-        taskone()
+        from src.TASK1.taskone import hangman
+        hangman()
     elif task_number == 2:
-        from src.TASK2 import tasktwo
-        tasktwo()
+        from src.TASK2.tasktwo import stock_investment
+        stock_investment()
     elif task_number == 3:
         from src.TASK3 import taskthree
         taskthree()
@@ -25,7 +25,7 @@ def cli():
         print("Exiting the program. Goodbye!")
         exit()
     else:
-        print("Invalid task number. Please enter a number between 1 and 5.")
+        print("Invalid task number. Please enter a number between 1 and 5.\n")
         cli()
-
+    
 
