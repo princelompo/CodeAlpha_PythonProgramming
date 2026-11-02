@@ -16,8 +16,8 @@ def cli():
         from src.TASK2.tasktwo import stock_investment
         stock_investment()
     elif task_number == 3:
-        from src.TASK3 import taskthree
-        taskthree()
+        from src.TASK3.taskthree import automation
+        automation()
     elif task_number == 4:
         from src.TASK4 import taskfour
         taskfour()
