@@ -19,8 +19,8 @@ def cli():
         from src.TASK3.taskthree import automation
         automation()
     elif task_number == 4:
-        from src.TASK4 import taskfour
-        taskfour()
+        from src.TASK4.taskfour import chatbot
+        chatbot()
     elif task_number == 5:
         print("Exiting the program. Goodbye!")
         exit()
