@@ -1,6 +1,3 @@
-
-
-
 print("\t 🔶 WELCOME TO TASK 3 : Tasks Automation\n ")
 
 def automation():
